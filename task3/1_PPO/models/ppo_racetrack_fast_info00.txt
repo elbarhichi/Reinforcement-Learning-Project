@@ -1,0 +1,14 @@
+algo=PPO
+n_envs=22
+n_steps=512
+batch_size=1024
+lr=0.0005
+gamma=0.9
+total_ts/env=100000
+
+
+with open(model_path.replace(".zip", "_info.txt"), "w") as f:
+    f.write(f"algo=PPO\nn_envs={N_ENVS}\n"
+            f"n_steps={N_STEPS}\nbatch_size={BATCH_SIZE}\n"
+            f"lr={LR}\ngamma={GAMMA}\n"
+            f"total_ts/env={TOTAL_TS}\n")

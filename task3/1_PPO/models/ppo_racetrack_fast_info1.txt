@@ -1,0 +1,8 @@
+n_envs      : 22
+n_steps     : 512
+batch_size  : 1024
+learning_rate : 0.00025
+gamma       : 0.99
+ent_coef    : 0.01
+total_ts/env: 20000
+model_path  : ../models/ppo_racetrack_fast.zip
