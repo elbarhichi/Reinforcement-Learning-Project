@@ -52,10 +52,11 @@ open figures/ppo_training_curves.png        # (mac) ou xdg-open …
 # 3. Évaluer un modèle sauvé
 python task3/evaluate_agent.py \
        --model models/ppo_racetrack_fast.zip --episodes 10
+
+# 4. Visualiser la dernière trajectoire
+python task3/plot_trajectory.py \
+       --model models/ppo_racetrack_fast.zip --env racetrack-v0
 ```
-
-
-
 
 
 ### 4. Task 4: **Racetracks Environment**
