@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Reinforcement-Learning-Project
-=======
 # Reinforcement Learning Project
 
 ## Team Members
