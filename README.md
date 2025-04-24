@@ -33,7 +33,14 @@ Les résultats de l'entraînement et de l'évaluation de l'agent sont sauvegard�
 - **training_metrics.csv** : Contient les métriques d'entraînement, telles que les récompenses cumulées et la perte, utilisées pour suivre la progression du modèle au fil des épisodes.
 
 ### 2. Task 2: **Racetracks with Continuous Actions**
-
+Dans ce task, l'objectif est d'implémenter un agent autonome capable de reste sur une route qui dévie, sans faire de collision avec les autres voitures présentes.
+Ce dossier contient les fichier suivants:
+- **code.ipynb** : Notebook de l'entrainement et l'évaluation de l'agent.
+- **reinforce.py** : Implémentation de l'algorithme REINFORCE, dans le cas d'espace continu d'actions.
+- **net.py** : Implémentation des réseaux de neurones utilisés pour entrainer l'agent.
+- **utils.py** : Contient des fonctions utiles.
+- **plots** : dossier contenant les plots des évolutions de returns et des loss.
+- **policies** : dossier contenant des fichiers pickle des policies sauvegardées
 
 ### 3. Task 3 : **Racetrack – Comparaison PPO / A2C / SAC (en utilisant SB3)**
 
@@ -77,6 +84,6 @@ python task3/plot_trajectory.py \
 ```
 
 
-### 4. Task 4: **Racetracks Environment**
-
+### 4. Task 4: **Tests in Racetracks Environment**
+Dans ce task, on effectue des tests, que ce soit en changeants les hyperparamètres de l'algorithme, soit en changeant la configuration de l'environnement déjà utilisé afin de tester les limites de notre agent entrainé. On utilise le même code que dans task2.
 
