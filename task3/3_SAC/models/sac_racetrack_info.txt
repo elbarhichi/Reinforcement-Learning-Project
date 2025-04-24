@@ -1,0 +1,2 @@
+algo=SAC
+n_envs=1
