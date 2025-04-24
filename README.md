@@ -12,7 +12,25 @@
 ## Environments and Scenarios
 
 ### 1. Task 1: Pre-specified Environment : **Highway with Discrete Actions**
+Dans cette tâche, l'objectif est d'implémenter un agent autonome utilisant **Deep Q-Networks (DQN)** pour naviguer sur une autoroute simulée. L'agent doit apprendre à :
 
+- **Éviter les collisions** : En prenant des actions pour rester à une distance sécuritaire des autres véhicules.
+- **Maintenir une vitesse optimale** : L'agent doit ajuster sa vitesse pour atteindre un comportement de conduite sécuritaire et efficace.
+- **Changer de voie** : L'agent doit savoir quand changer de voie pour éviter les obstacles ou optimiser son parcours.
+
+### Fichiers principaux
+
+- **dqn.py** : Implémentation du réseau de neurones (DQN) qui génère des Q-values pour chaque action possible.
+- **train_dqn.py** : Script principal pour entraîner l'agent en utilisant DQN.
+- **config.py** : Paramètres de configuration pour le modèle, y compris les hyperparamètres comme le taux d'apprentissage et le facteur de réduction.
+
+### Résultats et Fichiers d'Évaluation
+
+Les résultats de l'entraînement et de l'évaluation de l'agent sont sauvegardés dans le dossier **dqn_evaluation_results**, qui contient les fichiers suivants :
+
+- **best_model.pt** : Modèle sauvegardé après l'entraînement. Ce fichier contient les poids du réseau de neurones entraîné et peut être utilisé pour des tests ou évaluations supplémentaires.
+- **eval_metrics.csv** : Contient les métriques d'évaluation de l'agent sur des épisodes non vus pendant l'entraînement. Cela permet de suivre la performance de l'agent pendant l'évaluation.
+- **training_metrics.csv** : Contient les métriques d'entraînement, telles que les récompenses cumulées et la perte, utilisées pour suivre la progression du modèle au fil des épisodes.
 
 ### 2. Task 2: **Racetracks with Continuous Actions**
 
