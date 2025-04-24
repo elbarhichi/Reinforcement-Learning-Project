@@ -41,6 +41,7 @@ Ce dossier contient les fichier suivants:
 - **utils.py** : Contient des fonctions utiles.
 - **plots** : dossier contenant les plots des évolutions de returns et des loss.
 - **policies** : dossier contenant des fichiers pickle des policies sauvegardées
+- **final_performance_task2.mp4** : a video of the final performance of the agent.
 
 ### 3. Task 3 : **Racetrack – Comparaison PPO / A2C / SAC (en utilisant SB3)**
 
